@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>tpg Next – Assistance</title>
+<meta name="description" content="Assistance de l'app tpg Next : tpgnext@protonmail.ch.">
+<style>
+  :root {
+    --bg: #fff8f1;
+    --card: #ffffff;
+    --text: #26160a;
+    --muted: #6e5242;
+    --accent: #f08018;
+    --accent-text: #ffffff;
+    --border: rgba(38, 22, 10, 0.08);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17110c;
+      --card: #231a13;
+      --text: #f7ece2;
+      --muted: #c3ab98;
+      --accent: #f59a3c;
+      --accent-text: #1b1109;
+      --border: rgba(247, 236, 226, 0.1);
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Avenir Next", "Segoe UI", Roboto, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 48px 16px;
+  }
+  main { width: 100%; max-width: 560px; }
+  nav { display: flex; justify-content: flex-end; gap: 6px; margin-bottom: 32px; }
+  nav button {
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--muted);
+    border-radius: 999px;
+    padding: 6px 14px;
+    font: inherit;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  nav button[aria-pressed="true"] { background: var(--accent); color: var(--accent-text); border-color: transparent; }
+  h1 { font-size: 34px; line-height: 1.15; margin: 0 0 8px; }
+  .lead { color: var(--muted); font-size: 19px; margin: 0 0 32px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 24px;
+    margin-bottom: 20px;
+  }
+  .card h2 { font-size: 19px; margin: 0 0 8px; }
+  .card p, .card ul { margin: 0; color: var(--muted); }
+  .card ul { padding-left: 20px; }
+  .card li + li { margin-top: 4px; }
+  .mail {
+    display: inline-block;
+    margin-top: 16px;
+    background: var(--accent);
+    color: var(--accent-text);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 999px;
+    padding: 12px 22px;
+  }
+  .address { margin-top: 12px; font-size: 15px; }
+  .address a { color: var(--accent); }
+  footer { color: var(--muted); font-size: 14px; margin-top: 32px; }
+  [data-lang] { display: none; }
+  html[lang="fr"] [data-lang="fr"], html[lang="en"] [data-lang="en"], html[lang="de"] [data-lang="de"] { display: block; }
+</style>
+</head>
+<body>
+<main>
+  <nav aria-label="Langue / Language / Sprache">
+    <button type="button" data-set="fr">Français</button>
+    <button type="button" data-set="en">English</button>
+    <button type="button" data-set="de">Deutsch</button>
+  </nav>
+
+  <section data-lang="fr">
+    <h1>tpg Next – Assistance</h1>
+    <p class="lead">Une question, un problème ou une idée ? Une réponse arrive en général sous quelques jours.</p>
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Pour une réponse rapide, indiquez si possible la version de l'app (Paramètres, tout en bas), votre appareil, et l'arrêt ou l'itinéraire concerné.</p>
+      <a class="mail" href="mailto:tpgnext@protonmail.ch?subject=Assistance%20tpg%20Next">Écrire un e-mail</a>
+      <p class="address">ou directement à <a href="mailto:tpgnext@protonmail.ch">tpgnext@protonmail.ch</a></p>
+    </div>
+    <div class="card">
+      <h2>Avant d'écrire</h2>
+      <ul>
+        <li>Le guide d'utilisation et la visite guidée se trouvent dans Paramètres › Guide d'utilisation.</li>
+        <li>Les horaires viennent de l'API des transports publics suisses (opentransportdata.swiss) : un horaire erroné peut venir de la source.</li>
+        <li>Vos favoris et trajets se synchronisent avec iCloud ; aucun compte n'est nécessaire.</li>
+      </ul>
+    </div>
+    <footer>tpg Next n'est pas une application officielle et n'est pas affiliée aux TPG.</footer>
+  </section>
+
+  <section data-lang="en">
+    <h1>tpg Next – Support</h1>
+    <p class="lead">A question, a problem or an idea? Replies usually arrive within a few days.</p>
+    <div class="card">
+      <h2>Contact</h2>
+      <p>For a quick reply, please include the app version (Settings, at the very bottom), your device, and the stop or route concerned.</p>
+      <a class="mail" href="mailto:tpgnext@protonmail.ch?subject=tpg%20Next%20support">Send an email</a>
+      <p class="address">or write directly to <a href="mailto:tpgnext@protonmail.ch">tpgnext@protonmail.ch</a></p>
+    </div>
+    <div class="card">
+      <h2>Before you write</h2>
+      <ul>
+        <li>The user guide and the guided tour are in Settings › User Guide.</li>
+        <li>Timetables come from the Swiss public transport API (opentransportdata.swiss): a wrong time may come from the source.</li>
+        <li>Your favorites and trips sync with iCloud; no account is needed.</li>
+      </ul>
+    </div>
+    <footer>tpg Next is not an official app and is not affiliated with TPG.</footer>
+  </section>
+
+  <section data-lang="de">
+    <h1>tpg Next – Support</h1>
+    <p class="lead">Eine Frage, ein Problem oder eine Idee? Eine Antwort kommt in der Regel innerhalb weniger Tage.</p>
+    <div class="card">
+      <h2>Kontakt</h2>
+      <p>Für eine schnelle Antwort geben Sie bitte die App-Version (Einstellungen, ganz unten), Ihr Gerät und die betroffene Haltestelle oder Verbindung an.</p>
+      <a class="mail" href="mailto:tpgnext@protonmail.ch?subject=Support%20tpg%20Next">E-Mail schreiben</a>
+      <p class="address">oder direkt an <a href="mailto:tpgnext@protonmail.ch">tpgnext@protonmail.ch</a></p>
+    </div>
+    <div class="card">
+      <h2>Bevor Sie schreiben</h2>
+      <ul>
+        <li>Die Anleitung und die geführte Tour finden Sie unter Einstellungen › Anleitung.</li>
+        <li>Die Fahrpläne stammen von der API des Schweizer öffentlichen Verkehrs (opentransportdata.swiss): Eine falsche Zeit kann von der Quelle kommen.</li>
+        <li>Ihre Favoriten und Fahrten werden über iCloud synchronisiert; ein Konto ist nicht nötig.</li>
+      </ul>
+    </div>
+    <footer>tpg Next ist keine offizielle App und steht in keiner Verbindung zu den TPG.</footer>
+  </section>
+</main>
+<script>
+  (function () {
+    var supported = ["fr", "en", "de"];
+    function apply(lang) {
+      document.documentElement.lang = lang;
+      document.querySelectorAll("nav button").forEach(function (b) {
+        b.setAttribute("aria-pressed", String(b.dataset.set === lang));
+      });
+    }
+    var fromURL = new URLSearchParams(location.search).get("lang");
+    var fromBrowser = (navigator.languages || [navigator.language || "fr"])
+      .map(function (l) { return l.slice(0, 2).toLowerCase(); })
+      .find(function (l) { return supported.indexOf(l) >= 0; });
+    apply(supported.indexOf(fromURL) >= 0 ? fromURL : (fromBrowser || "fr"));
+    document.querySelectorAll("nav button").forEach(function (b) {
+      b.addEventListener("click", function () { apply(b.dataset.set); });
+    });
+  })();
+</script>
+</body>
+</html>
