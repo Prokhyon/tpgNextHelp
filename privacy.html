@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>tpg Next – Confidentialité</title>
+<meta name="description" content="Politique de confidentialité de l'app tpg Next : pas de compte, pas de publicité, aucune donnée collectée.">
+<style>
+  :root {
+    --bg: #fff8f1;
+    --card: #ffffff;
+    --text: #26160a;
+    --muted: #6e5242;
+    --accent: #f08018;
+    --accent-text: #ffffff;
+    --border: rgba(38, 22, 10, 0.08);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17110c;
+      --card: #231a13;
+      --text: #f7ece2;
+      --muted: #c3ab98;
+      --accent: #f59a3c;
+      --accent-text: #1b1109;
+      --border: rgba(247, 236, 226, 0.1);
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Avenir Next", "Segoe UI", Roboto, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 48px 16px;
+  }
+  main { width: 100%; max-width: 560px; }
+  nav { display: flex; justify-content: flex-end; gap: 6px; margin-bottom: 32px; }
+  nav button {
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--muted);
+    border-radius: 999px;
+    padding: 6px 14px;
+    font: inherit;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  nav button[aria-pressed="true"] { background: var(--accent); color: var(--accent-text); border-color: transparent; }
+  h1 { font-size: 34px; line-height: 1.15; margin: 0 0 8px; }
+  .lead { color: var(--muted); font-size: 19px; margin: 0 0 32px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 24px;
+    margin-bottom: 20px;
+  }
+  .card h2 { font-size: 19px; margin: 0 0 8px; }
+  .card p, .card ul { margin: 0; color: var(--muted); }
+  .card ul { padding-left: 20px; }
+  .card li + li { margin-top: 4px; }
+  .mail {
+    display: inline-block;
+    margin-top: 16px;
+    background: var(--accent);
+    color: var(--accent-text);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 999px;
+    padding: 12px 22px;
+  }
+  .address { margin-top: 12px; font-size: 15px; }
+  .address a { color: var(--accent); }
+  footer { color: var(--muted); font-size: 14px; margin-top: 32px; }
+  [data-lang] { display: none; }
+  html[lang="fr"] [data-lang="fr"], html[lang="en"] [data-lang="en"], html[lang="de"] [data-lang="de"] { display: block; }
+  .card p + p, .card p + ul, .card ul + p { margin-top: 8px; }
+  .date { color: var(--muted); font-size: 15px; margin: -24px 0 32px; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <nav aria-label="Langue / Language / Sprache">
+    <button type="button" data-set="fr">Français</button>
+    <button type="button" data-set="en">English</button>
+    <button type="button" data-set="de">Deutsch</button>
+  </nav>
+
+  <section data-lang="fr">
+    <h1>tpg Next – Politique de confidentialité</h1>
+    <p class="lead">tpg Next respecte votre vie privée : pas de compte, pas de publicité, aucun outil d'analyse ni de suivi. Vos données restent sur vos appareils.</p>
+    <p class="date">Dernière mise à jour : 13 octobre 2026</p>
+    <div class="card">
+      <h2>Données enregistrées sur l'appareil</h2>
+      <p>Vos arrêts et lieux favoris, vos recherches récentes, vos itinéraires enregistrés, vos trajets réguliers, vos rappels et vos réglages sont enregistrés uniquement sur votre appareil. Ils ne sont jamais envoyés au développeur.</p>
+    </div>
+    <div class="card">
+      <h2>Synchronisation iCloud</h2>
+      <p>Vos favoris, lieux, itinéraires enregistrés et trajets réguliers peuvent être synchronisés entre vos appareils par votre compte iCloud (stockage clé-valeur d'Apple). Le développeur n'y a pas accès. La synchronisation se désactive dans les Paramètres de l'app.</p>
+    </div>
+    <div class="card">
+      <h2>Localisation</h2>
+      <p>L'app demande l'accès à votre position « Pendant l'utilisation de l'app » uniquement, jamais « Toujours ». Elle s'en sert pour afficher les arrêts et départs proches, vous situer sur la carte, chercher un itinéraire depuis votre position et suivre un trajet en direct.</p>
+      <p>Pendant un suivi en direct, lancé par vous ou automatiquement pour un trajet régulier si vous l'avez activé, l'app continue d'utiliser votre position en arrière-plan pour savoir où vous en êtes. Le suivi s'arrête à la fin du trajet ou quand vous l'arrêtez, et l'indicateur de localisation reste visible pendant toute sa durée.</p>
+      <p>Votre position n'est ni enregistrée sur un serveur, ni transmise au développeur. La dernière position connue est gardée sur l'appareil pour les widgets.</p>
+    </div>
+    <div class="card">
+      <h2>Services utilisés</h2>
+      <p>Pour les horaires et les itinéraires, l'app interroge l'API des transports publics suisses (opentransportdata.swiss). Les requêtes contiennent les arrêts et les heures recherchés et, pour un itinéraire depuis votre position, ses coordonnées. Comme pour toute connexion à internet, ce service voit l'adresse IP de votre appareil.</p>
+      <p>Les cartes, la recherche de lieux et d'adresses utilisent Plans d'Apple, soumis à la politique de confidentialité d'Apple.</p>
+    </div>
+    <div class="card">
+      <h2>Notifications et activités en direct</h2>
+      <p>Les rappels, les alertes de trajet et les activités en direct sont programmés sur votre appareil. Aucun serveur de notifications n'est utilisé. Les autorisations se gèrent dans les réglages d'iOS.</p>
+    </div>
+    <div class="card">
+      <h2>Apple Watch</h2>
+      <p>L'iPhone envoie à votre Apple Watch vos favoris et vos prochains trajets, directement entre vos appareils.</p>
+    </div>
+    <div class="card">
+      <h2>Diagnostic</h2>
+      <p>L'app note sur l'appareil l'usage de l'API (quotas, erreurs) pour son écran de diagnostic. Ces informations ne quittent pas l'appareil. Aucune donnée de plantage ou d'utilisation n'est collectée.</p>
+    </div>
+    <div class="card">
+      <h2>Aucune donnée collectée</h2>
+      <p>tpg Next ne collecte, ne vend et ne partage aucune donnée personnelle, et ne vous suit pas d'une app ou d'un site à l'autre. Si vous écrivez par e-mail, votre adresse sert uniquement à vous répondre.</p>
+    </div>
+    <div class="card">
+      <h2>Modifications</h2>
+      <p>Cette politique peut être mise à jour pour suivre l'évolution de l'app ou de la loi. Les modifications sont publiées sur cette page, avec leur date.</p>
+    </div>
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Pour toute question sur cette politique : <a href="mailto:tpgnext@protonmail.ch">tpgnext@protonmail.ch</a>.</p>
+    </div>
+    <footer>tpg Next n'est pas une application officielle et n'est pas affiliée aux TPG. · <a href="./">Assistance</a></footer>
+  </section>
+  <section data-lang="en">
+    <h1>tpg Next – Privacy Policy</h1>
+    <p class="lead">tpg Next respects your privacy: no account, no advertising, no analytics or tracking tools. Your data stays on your devices.</p>
+    <p class="date">Last updated: October 13, 2026</p>
+    <div class="card">
+      <h2>Data stored on the device</h2>
+      <p>Your favorite stops and places, recent searches, saved routes, regular trips, reminders and settings are stored only on your device. They are never sent to the developer.</p>
+    </div>
+    <div class="card">
+      <h2>iCloud sync</h2>
+      <p>Your favorites, places, saved routes and regular trips can be synced across your devices through your iCloud account (Apple's key-value storage). The developer has no access to them. Sync can be turned off in the app's Settings.</p>
+    </div>
+    <div class="card">
+      <h2>Location</h2>
+      <p>The app asks for access to your location "While Using the App" only, never "Always". It uses it to show nearby stops and departures, show you on the map, plan a route from your position and track a trip live.</p>
+      <p>During live tracking, started by you or automatically for a regular trip if you turned it on, the app keeps using your location in the background to know where you are on the trip. Tracking stops at the end of the trip or when you stop it, and the location indicator stays visible the whole time.</p>
+      <p>Your location is never stored on a server or sent to the developer. The last known location is kept on the device for the widgets.</p>
+    </div>
+    <div class="card">
+      <h2>Services used</h2>
+      <p>For timetables and routes, the app queries the Swiss public transport API (opentransportdata.swiss). Requests contain the stops and times you search for and, for a route from your position, its coordinates. As with any internet connection, this service sees your device's IP address.</p>
+      <p>Maps, place and address search use Apple Maps, subject to Apple's privacy policy.</p>
+    </div>
+    <div class="card">
+      <h2>Notifications and Live Activities</h2>
+      <p>Reminders, trip alerts and Live Activities are scheduled on your device. No notification server is used. Permissions are managed in iOS Settings.</p>
+    </div>
+    <div class="card">
+      <h2>Apple Watch</h2>
+      <p>Your iPhone sends your favorites and upcoming trips to your Apple Watch, directly between your devices.</p>
+    </div>
+    <div class="card">
+      <h2>Diagnostics</h2>
+      <p>The app records API usage (quotas, errors) on the device for its diagnostics screen. This information never leaves the device. No crash or usage data is collected.</p>
+    </div>
+    <div class="card">
+      <h2>No data collected</h2>
+      <p>tpg Next does not collect, sell or share any personal data, and does not track you across apps or websites. If you write by email, your address is used only to reply to you.</p>
+    </div>
+    <div class="card">
+      <h2>Changes</h2>
+      <p>This policy may be updated to follow changes in the app or the law. Changes are published on this page, with their date.</p>
+    </div>
+    <div class="card">
+      <h2>Contact</h2>
+      <p>For any question about this policy: <a href="mailto:tpgnext@protonmail.ch">tpgnext@protonmail.ch</a>.</p>
+    </div>
+    <footer>tpg Next is not an official app and is not affiliated with TPG. · <a href="./?lang=en">Support</a></footer>
+  </section>
+  <section data-lang="de">
+    <h1>tpg Next – Datenschutzerklärung</h1>
+    <p class="lead">tpg Next respektiert Ihre Privatsphäre: kein Konto, keine Werbung, keine Analyse- oder Tracking-Tools. Ihre Daten bleiben auf Ihren Geräten.</p>
+    <p class="date">Letzte Aktualisierung: 13. Oktober 2026</p>
+    <div class="card">
+      <h2>Auf dem Gerät gespeicherte Daten</h2>
+      <p>Ihre Lieblingshaltestellen und -orte, letzten Suchen, gespeicherten Verbindungen, regelmässigen Fahrten, Erinnerungen und Einstellungen werden nur auf Ihrem Gerät gespeichert. Sie werden nie an den Entwickler gesendet.</p>
+    </div>
+    <div class="card">
+      <h2>iCloud-Synchronisierung</h2>
+      <p>Ihre Favoriten, Orte, gespeicherten Verbindungen und regelmässigen Fahrten können über Ihr iCloud-Konto (Schlüssel-Wert-Speicher von Apple) zwischen Ihren Geräten synchronisiert werden. Der Entwickler hat keinen Zugriff darauf. Die Synchronisierung lässt sich in den Einstellungen der App ausschalten.</p>
+    </div>
+    <div class="card">
+      <h2>Standort</h2>
+      <p>Die App fragt nur „Beim Verwenden der App“ nach Ihrem Standort, nie „Immer“. Sie nutzt ihn, um Haltestellen und Abfahrten in der Nähe anzuzeigen, Sie auf der Karte zu zeigen, eine Verbindung ab Ihrem Standort zu suchen und eine Fahrt live zu verfolgen.</p>
+      <p>Während einer Live-Verfolgung, von Ihnen gestartet oder automatisch für eine regelmässige Fahrt, falls Sie dies eingeschaltet haben, nutzt die App Ihren Standort auch im Hintergrund, um zu wissen, wo Sie sich auf der Fahrt befinden. Die Verfolgung endet am Ende der Fahrt oder wenn Sie sie beenden, und die Standortanzeige bleibt die ganze Zeit sichtbar.</p>
+      <p>Ihr Standort wird weder auf einem Server gespeichert noch an den Entwickler übermittelt. Der letzte bekannte Standort bleibt für die Widgets auf dem Gerät.</p>
+    </div>
+    <div class="card">
+      <h2>Verwendete Dienste</h2>
+      <p>Für Fahrpläne und Verbindungen fragt die App die API des Schweizer öffentlichen Verkehrs ab (opentransportdata.swiss). Die Anfragen enthalten die gesuchten Haltestellen und Zeiten und, bei einer Verbindung ab Ihrem Standort, dessen Koordinaten. Wie bei jeder Internetverbindung sieht dieser Dienst die IP-Adresse Ihres Geräts.</p>
+      <p>Karten sowie die Suche nach Orten und Adressen nutzen Apple Karten, gemäss der Datenschutzrichtlinie von Apple.</p>
+    </div>
+    <div class="card">
+      <h2>Mitteilungen und Live-Aktivitäten</h2>
+      <p>Erinnerungen, Fahrthinweise und Live-Aktivitäten werden auf Ihrem Gerät geplant. Es wird kein Mitteilungsserver verwendet. Die Berechtigungen verwalten Sie in den iOS-Einstellungen.</p>
+    </div>
+    <div class="card">
+      <h2>Apple Watch</h2>
+      <p>Ihr iPhone sendet Ihre Favoriten und nächsten Fahrten direkt an Ihre Apple Watch.</p>
+    </div>
+    <div class="card">
+      <h2>Diagnose</h2>
+      <p>Die App erfasst die Nutzung der API (Kontingente, Fehler) auf dem Gerät für ihre Diagnoseansicht. Diese Informationen verlassen das Gerät nicht. Es werden keine Absturz- oder Nutzungsdaten erhoben.</p>
+    </div>
+    <div class="card">
+      <h2>Keine Datenerhebung</h2>
+      <p>tpg Next erhebt, verkauft und teilt keine personenbezogenen Daten und verfolgt Sie nicht über Apps oder Websites hinweg. Wenn Sie per E-Mail schreiben, wird Ihre Adresse nur für die Antwort verwendet.</p>
+    </div>
+    <div class="card">
+      <h2>Änderungen</h2>
+      <p>Diese Erklärung kann an Änderungen der App oder des Rechts angepasst werden. Änderungen werden auf dieser Seite mit Datum veröffentlicht.</p>
+    </div>
+    <div class="card">
+      <h2>Kontakt</h2>
+      <p>Bei Fragen zu dieser Erklärung: <a href="mailto:tpgnext@protonmail.ch">tpgnext@protonmail.ch</a>.</p>
+    </div>
+    <footer>tpg Next ist keine offizielle App und steht in keiner Verbindung zu den TPG. · <a href="./?lang=de">Support</a></footer>
+  </section>
+</main>
+<script>
+  (function () {
+    var supported = ["fr", "en", "de"];
+    function apply(lang) {
+      document.documentElement.lang = lang;
+      document.querySelectorAll("nav button").forEach(function (b) {
+        b.setAttribute("aria-pressed", String(b.dataset.set === lang));
+      });
+    }
+    var fromURL = new URLSearchParams(location.search).get("lang");
+    var fromBrowser = (navigator.languages || [navigator.language || "fr"])
+      .map(function (l) { return l.slice(0, 2).toLowerCase(); })
+      .find(function (l) { return supported.indexOf(l) >= 0; });
+    apply(supported.indexOf(fromURL) >= 0 ? fromURL : (fromBrowser || "fr"));
+    document.querySelectorAll("nav button").forEach(function (b) {
+      b.addEventListener("click", function () { apply(b.dataset.set); });
+    });
+  })();
+</script>
+</body>
+</html>
